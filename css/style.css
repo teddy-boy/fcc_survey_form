@@ -1,0 +1,77 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#title, #description {
+  text-align: center;
+}
+
+#title {
+  margin-top: 70px;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 50px auto;
+  background: rgb(32, 32, 32);
+  opacity: 0.8;
+  padding: 60px;
+  border-radius: 5px;
+}
+
+span {
+  font-size: 0.8rem;
+}
+
+#name-label, #email-label, #number-label, #role-label {
+  margin: 20px 0 10px 0;
+}
+
+#name, #email, #number, #dropdown, #features {
+  height: 40px;
+}
+
+#radio-label, #checkbox-label, #feature-label, #suggestion-label {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+[type="radio"], [type="checkbox"] {
+  margin: 10px 10px 10px 0;
+}
+
+#suggestion {
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+button {
+  padding: 7px 0;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  margin-top: 30px;
+  background-color: rgb(52, 75, 7);
+  border-color: rgb(52, 75, 7);
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  #survey-form {
+    padding: 30px;
+  }
+}
